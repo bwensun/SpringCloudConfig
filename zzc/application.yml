@@ -9,7 +9,7 @@ eureka:
   instance:
     prefer-ip-address: true
     #多少秒内没有发送心跳，则剔除服务列表
-    lease-expiration-duration-in-seconds: 90
+    lease-expiration-duration-in-seconds: 90000
     #每隔多少秒向服务端发送心跳
     lease-renewal-interval-in-seconds: 3
 
@@ -27,4 +27,3 @@ spring:
       password: 285413
       #driver-class-name: oracle.jdbc.OracleDriver
       driver-class-name: com.mysql.jdbc.Driver
-application
