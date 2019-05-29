@@ -27,3 +27,4 @@ spring:
       password: 285413
       #driver-class-name: oracle.jdbc.OracleDriver
       driver-class-name: com.mysql.jdbc.Driver
+application
