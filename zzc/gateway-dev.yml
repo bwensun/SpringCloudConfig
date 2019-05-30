@@ -26,4 +26,4 @@ spring:
        # - Header=Access-Control-Request-Headers, bowensun.top
        # - Query=uid, 1
        # - Cookie=name, bowensun.top
-       # - Between=2019-05-30T00:00:00+08:00[Asia/Shanghai], 2019-06-0T06:00:00+08:00[Asia/Shanghai]
+        - Between=2019-06-30T00:00:00+08:00[Asia/Shanghai], 2019-07-30T06:00:00+08:00[Asia/Shanghai]
