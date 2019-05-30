@@ -24,8 +24,8 @@ spring:
         - Path=/gate1
         - Method=GET
         - Between=2019-05-30T00:00:00+08:00[Asia/Shanghai], 2019-07-30T06:00:00+08:00[Asia/Shanghai]
-
+        - Query=uid, 1
        # - Header=Access-Control-Request-Headers, bowensun.top
-       # - Query=uid, 1
+       
        # - Cookie=name, bowensun.top
         
