@@ -27,7 +27,7 @@ spring:
         - Query=uid, 1
         - Cookie=name, bowensun.top
         - Header=Access-Control-Request-Headers, bowensun.top
-        filter:
+        filters:
         - AddRequestHeader=X-Request-Foo,Bar
        # - RewritePath=/gate1, /gate2
 
