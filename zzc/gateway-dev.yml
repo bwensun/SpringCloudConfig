@@ -22,7 +22,7 @@ spring:
         uri: http://localhost:8021/user/test11
         predicates:
         - Path=/gate1
-        - Method=GET
+        - Method=POST
         - Between=2019-05-30T00:00:00+08:00[Asia/Shanghai], 2019-07-30T06:00:00+08:00[Asia/Shanghai]
         - Query=uid, 1
         - Cookie=name, bowensun.top
