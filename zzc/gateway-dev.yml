@@ -19,7 +19,7 @@ spring:
     gateway:
       routes:
       - id: route1
-        uri: http://localhost:8021/user/test
+        uri: http://localhost:8021/user/test11
         predicates:
         - Path=/gate1
         - Method=GET
@@ -29,7 +29,7 @@ spring:
         - Header=Access-Control-Request-Headers, bowensun.top
         filters:
         - AddRequestHeader=X-Request-Foo,Bar
-       # - RewritePath=/gate1, /gate2
+        - RewritePath=/gate1, /gate2
 
       - id: route2
         uri: http://localhost:8021/user/test
