@@ -19,7 +19,7 @@ spring:
     gateway:
       routes:
       - id: route1
-        uri: http://localhost:8021/user/
+        uri: http://localhost:8021/user
         predicates:
         - Path=/gate1
         - Method=GET
