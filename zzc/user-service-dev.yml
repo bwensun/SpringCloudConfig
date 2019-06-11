@@ -7,7 +7,7 @@ eureka:
 
 spring:
   application:
-    name: user-service
+    name: user-service2
   # 数据库配置
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
