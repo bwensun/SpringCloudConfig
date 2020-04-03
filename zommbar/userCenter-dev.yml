@@ -1,0 +1,30 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+  instance:
+    prefer-ip-address: true
+
+  # 数据库配置
+  datasource:
+      type: com.alibaba.druid.pool.DruidDataSource
+      druid:
+        url: jdbc:mysql://114.215.86.43:3306/zoombar?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&autoReconnectForPools=true&failOverReadOnly=false&serverTimezone=GMT%2B8&useSSL=false
+        username: root
+        password: '!EeXZY8d'
+        #driver-class-name: oracle.jdbc.OracleDriver
+        driver-class-name: com.mysql.jdbc.Driver
+        #初始化时建立物理连接的个数
+        initial-size: 1
+        #最大连接数量
+        max-active: 100
+        #最小连接数量
+        min-idle: 5
+        #最大等待时间（毫秒）
+        max-wait: 60000
+        #是否缓存preparedStatement，也就是PSCache。PSCache对支持游标的数据库性能提升巨大，比如说oracle。在mysql下建议关闭
+        pool-prepared-statements: false
+
+mybatis:
+  type-aliases-package: com.bowensun.domain
+  mapper-locations: classpath:mapper/*.xml
